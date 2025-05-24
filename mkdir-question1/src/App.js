@@ -1,7 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React {useState} 'react';
+import axios from 'axios';
 
 function App() {
+  const [Type, setType] = useState("e");
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useSate(false);
+  const handleFetch = async () => {
+    setLoading
+  }
   return (
     <div className="App">
       <header className="App-header">
